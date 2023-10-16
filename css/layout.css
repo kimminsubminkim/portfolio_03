@@ -1,7 +1,7 @@
-#wrap {
+/* #wrap {
     max-width: 100%;
     margin: auto;
-}
+} */
 
 /* .header-top {
     margin: auto;
@@ -14,21 +14,21 @@
     background-color: aqua;
 } */
 
-.banner {
+/* .banner {
     max-width: calc(100% - 500px);
     height: 617.24px;
     flex-shrink: 0;
     background-color: blueviolet;
     margin: auto;
-}
+} */
 
-.me {
+/* .me {
     max-width: calc(100% - 500px);
     height: 675px;
     flex-shrink: 0;
     margin: auto;
     background-color: burlywood;
-}
+} */
 
 .career {
     max-width: calc(100% - 500px);

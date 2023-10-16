@@ -1,27 +1,132 @@
 .menu {
-    width: 900px;
+    height: 40px;
+    padding-top: 10px;
+    max-width: calc(100% - 1000px);
     display: flex;
     justify-content: space-around;
     color: #000;
     font-family: Poppins;
     font-size: 21px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     letter-spacing: 0.63px;
     text-decoration: none;
     padding-bottom: 10px;
     margin: auto;
+    list-style: none;
 }
 
 .banner {
-    max-width: calc(100% - 500px);
+    max-width: calc(100% - 1000px);
     height: 617.24px;
+    flex-shrink: 0;
+}
+
+.banner-text {
+    position: absolute;
+    left: 300px;
+    bottom: 250px;
+    font-family: Poppins;
+}
+
+
+.header-top img {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 10px;
+    left: 350px;
+}
+
+.me {
+    display: flex;
+    max-width: calc(100% - 500px);
+    height: 675px;
     flex-shrink: 0;
     margin: auto;
 }
 
-.header-top img {
-    width: 60px;
-    height: 60px;
+.picture {
+    position: absolute;
+    left: 250px;
+}
+
+.main-text {
+    position: absolute;
+    left: 1050px;
+}
+
+.main-text h2,
+h3 {
+    padding-top: 200px;
+    font-family: Poppins;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 120px */
+    letter-spacing: 3px;
+}
+
+.main-text h2 {
+    font-size: 40px;
+}
+
+.main-text h3 {
+    font-size: 30px;
+}
+
+.career {
+    max-width: calc(100% - 500px);
+    height: 1020px;
+    flex-shrink: 0;
+    margin: auto;
+    display: flex;
+}
+
+.career h1 {
+    position: absolute;
+    left: 850px;
+    bottom: -600px;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.education,
+.license {
+    position: relative;
+    bottom: -300px;
+    left: 400px;
+    justify-content: space-between;
+    padding-left: 150px;
+
+}
+
+.career h2 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.license {
+    position: relative;
+}
+
+.project {
+    max-width: calc(100% - 500px);
+    height: 1020px;
+    flex-shrink: 0;
+    margin: auto;
+    display: flex;
+}
+
+.project h1 {
+    font-size: 60px;
+    font-weight: 700;
+    position: absolute;
+    top: 1850px;
+    left: 900px;
+}
+
+.nike {
+    
 }
