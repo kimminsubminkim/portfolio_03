@@ -1,0 +1,27 @@
+.menu {
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+    color: #000;
+    font-family: Poppins;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.63px;
+    text-decoration: none;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+.banner {
+    max-width: calc(100% - 500px);
+    height: 617.24px;
+    flex-shrink: 0;
+    margin: auto;
+}
+
+.header-top img {
+    width: 60px;
+    height: 60px;
+}
