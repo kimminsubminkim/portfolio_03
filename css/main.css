@@ -1,10 +1,12 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Noto+Sans+KR:wght@100; 300; 400; 500; 700; 900&display=swap');
 .menu {
     height: 40px;
     padding-top: 10px;
     max-width: calc(100% - 1000px);
     display: flex;
     justify-content: space-around;
-    color: #000;
+    color: #5a5555;
     font-family: Poppins;
     font-size: 21px;
     font-weight: 400;

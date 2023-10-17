@@ -106,3 +106,7 @@ blockquote:after,
 q:before,
 q:after {content: '';content: none; }
 table {border-collapse: collapse;border-spacing: 0; }
+a{color:#fff;text-decoration:none}
+a:link, a:visited{color:#fff;text-decoration:none;}
+a:hover{text-decoration:none;}
+a:active{text-decoration:none;}
