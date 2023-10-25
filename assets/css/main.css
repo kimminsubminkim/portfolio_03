@@ -4024,7 +4024,6 @@ body.is-ie #wrapper>section>.content>section {
 
 .left {
 	width: 60vw;
-	transition: left 1s ease-in-out;
 	left: -100%;
 }
 
@@ -4070,32 +4069,6 @@ body.is-ie #wrapper>section>.content>section {
 	width: 100%;
 }
 
-/* mobile */
-.left .mockup.mobile {
-	z-index: 99;
-	position: relative;
-	top: -76%;
-	left: 58%;
-	width: 20%;
-	height: 60%;
-}
-
-.left .mockup.mobile .mask {
-	z-index: 999;
-	width: 10.5vw;
-	height: 100%;
-	overflow: hidden;
-	top: 10.8%;
-	left: 7%;
-	border-radius: 16px 16px 0 0;
-}
-
-.left .mockup.mobile img.screen {
-	z-index: 3;
-	width: 100%;
-}
-
-.left .mockup.mobile img.device {
-	z-index: 4;
-	width: 100%;
+.project_1 {
+	z-index: 999999;
 }
