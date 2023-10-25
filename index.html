@@ -6,27 +6,35 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>김민섭의 포트폴리오</title>
 	<link rel="stylesheet" href="./assets/css/main.css">
+	<link rel="stylesheet" href="./assets/css/fontawesome-all.min.css">
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
 </head>
 
 <body>
-	<!-- Wrapper -->
 	<div id="wrapper">
-		<!-- Intro -->
 		<section class="intro">
 			<header>
 				<h1>방향을 잃지 않는 디자이너 김민섭입니다.</h1>
-				<p><a href="https://github.com/kimminsubminkim">GITHUB</a>/
+				<p><a href="https://github.com/kimminsubminkim"><img src="./images/github_icon.png" width="15px"
+							height="15px" alt="github"> GITHUB</a>/
 					<a href="#">이력서보기</a>
 				<ul class="actions">
 					<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
 				</ul>
 			</header>
 			<div class="content">
-				<span class="imagefill" data-position="center"><img src="images/pic01.jpg" alt="me" /></span>
+				<span class="imagefill" data-position="center"><img src="images/pic01.jpg" height="90%"
+						alt="me" /></span>
 			</div>
 		</section>
 
-		<!-- Section -->
+
 		<section id="first">
 			<header>
 				<h2>About me</h2>
@@ -34,11 +42,10 @@
 			<div class="content">
 				<h3>About me</h3>
 				<p>방향을 잃지 않는 디자이너 김민섭입니다.</p>
-				<span class="imagemain"><img src="./images/pic01.jpg" alt="about me" /></span>
 			</div>
 		</section>
 
-		<!-- Section -->
+
 		<section>
 			<header>
 				<h2>Career</h2>
@@ -46,32 +53,24 @@
 			<div class="content">
 				<h3>Career</h3>
 				<ul class="feature-icons1">
-					<li class="icon solid fa-laptop"><strong>EDUCATION</strong></li>
-					<li class="icon solid fa-bolt">2021~ 호서대 물리치료학과 재학</li>
-					<li class="icon solid fa-signal">Libero nullam</li>
-					<li class="icon solid fa-cog">Blandit condimentum</li>
-					<li class="icon solid fa-map-marker-alt">Lorem ipsum dolor</li>
-					<li class="icon solid fa-code">Nibh amet venenatis</li>
+					<li><strong>EDUCATION</strong></li>
+					<li>2021~ 호서대 물리치료학과 재학</li>
+					<li>Libero nullam</li>
 				</ul>
 				<ul class="feature-icons2">
-					<li class="icon solid fa-laptop"><strong>LICENSE</strong></li>
-					<li class="icon solid fa-bolt">2020.HSK 6급</li>
-					<li class="icon solid fa-signal">2022.운전면허 1종 보통</li>
-					<!-- <li class="icon solid fa-cog">Blandit condimentum</li>
-					<li class="icon solid fa-map-marker-alt">Lorem ipsum dolor</li>
-					<li class="icon solid fa-code">Nibh amet venenatis</li> -->
+					<li><strong>LICENSE</strong></li>
+					<li>2020.HSK 6급</li>
+					<li>2022.운전면허 1종 보통</li>
 				</ul>
 			</div>
 		</section>
 
-		<!-- Section -->
 		<section>
 			<header>
 				<h2>Project</h2>
 			</header>
 			<div class="content">
 				<h3>My Project</h3>
-				<!-- Section -->
 				<section>
 					<header>
 						<ul class="project_1">
@@ -91,18 +90,22 @@
 						<p><a href="#"></a></p>
 					</header>
 					<div class="content">
-						<div class="gallery">
-							<a href="images/gallery/fulls/01.jpg" class="landscape"><img
-									src="images/gallery/thumbs/01.jpg" alt="" /></a>
-							<a href="images/gallery/fulls/02.jpg"><img src="images/gallery/thumbs/02.jpg" alt="" /></a>
-							<a href="images/gallery/fulls/03.jpg"><img src="images/gallery/thumbs/03.jpg" alt="" /></a>
-							<a href="images/gallery/fulls/04.jpg" class="landscape"><img
-									src="images/gallery/thumbs/04.jpg" alt="" /></a>
-						</div>
+						<section class="section4">
+							<div class="container">
+								<div class="item left pa">
+									<div class="mockup pc">
+										<div class="mask"><img src="./images/gallery/nike.png" width="45%"  alt="" class="screen" />
+										</div>
+										<img src="./images/desktop.png" width="50%" alt="" class="device" />
+									</div>
+								</div>
+								<div class="item right bg1 pa"></div>
+							</div>
+						</section>
 					</div>
 				</section>
 
-				<!-- Section -->
+
 				<section>
 					<header>
 						<ul>
@@ -113,6 +116,12 @@
 							<li>브라우저</li>
 							<li>특징</li>
 						</ul>
+						<div class="button">
+							<p><a href="#">페이지보기</a></p>
+						</div>
+						<div class="button">
+							<p><a href="#">깃허브 보기</a></p>
+						</div>
 					</header>
 					<div class="content">
 						<div class="gallery">
@@ -124,7 +133,7 @@
 					</div>
 				</section>
 
-				<!-- Section -->
+
 				<section>
 					<header>
 						<h3>Lorem gravida</h3>
@@ -464,19 +473,9 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 			</footer>
 		</section>
 
-		<!-- Copyright -->
 		<div class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.
 		</div>
 	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
