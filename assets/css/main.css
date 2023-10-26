@@ -4015,7 +4015,7 @@ body.is-ie #wrapper>section>.content>section {
 
 .pa {
 	position: absolute;
-	top: 0;
+	top: 0%;
 }
 
 .item {
@@ -4032,9 +4032,6 @@ body.is-ie #wrapper>section>.content>section {
 	right: 0;
 }
 
-.is-animated .left {
-	left: 0;
-}
 
 .left .mockup img,
 .left .mockup .mask {
@@ -4071,4 +4068,54 @@ body.is-ie #wrapper>section>.content>section {
 
 .project_1 {
 	z-index: 999999;
+}
+
+.charts {
+	width: 80%;
+	margin: -4rem;
+	display: flex;
+	justify-content: center;
+}
+
+.charts .chart {
+	margin: 0 10px;
+	position: relative;
+}
+
+.charts .chart h2 {
+	left: 38%;
+	top: 62%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+}
+
+.charts .chart svg {
+	width: 220px;
+	height: 220px;
+}
+
+.charts .chart svg circle {
+	fill: #e6e6e6;
+	stroke-width: 20;
+	stroke-dasharray: 628;
+	stroke-dashoffset: 628;
+	stroke-linecap: round;
+	transform: rotate(-90deg);
+	transform-origin: 50% 50%;
+}
+
+.charts .chart:nth-child(1) svg circle {
+	stroke: #ffc114;
+}
+
+.charts .chart:nth-child(2) svg circle {
+	stroke: #ff4714;
+}
+
+.charts .chart:nth-child(3) svg circle {
+	stroke: #4714ff;
+}
+
+.charts .chart:nth-child(4) svg circle {
+	stroke: #4714ff;
 }
