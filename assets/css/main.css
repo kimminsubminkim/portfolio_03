@@ -4123,4 +4123,7 @@ body.is-ie #wrapper>section>.content>section {
 }
 
 
-.buttons{z-index:999 ;}
+.buttons {
+	z-index: 999;
+	display: flex;
+}
