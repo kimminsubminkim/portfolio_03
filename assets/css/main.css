@@ -4016,6 +4016,7 @@ body.is-ie #wrapper>section>.content>section {
 .pa {
 	position: absolute;
 	top: 0%;
+	z-index: -999;
 }
 
 .item {
@@ -4025,6 +4026,7 @@ body.is-ie #wrapper>section>.content>section {
 .left {
 	width: 60vw;
 	left: -100%;
+	z-index: -999;
 }
 
 .right {
@@ -4119,3 +4121,6 @@ body.is-ie #wrapper>section>.content>section {
 .charts .chart:nth-child(4) svg circle {
 	stroke: #4714ff;
 }
+
+
+.buttons{z-index:999 ;}
