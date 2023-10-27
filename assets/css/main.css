@@ -2964,6 +2964,7 @@ a.arrow:before {
 	position: relative;
 	width: 3rem;
 }
+
 /* Feature Icons */
 
 ul.feature-icons1 {
@@ -3108,7 +3109,7 @@ ul.feature-icons li:nth-child(2) {
 }
 
 #wrapper>section>header:before {
-	background: #ffffff;
+	background: #01fff2;
 	content: '';
 	display: block;
 	margin-top: 1rem;
@@ -3123,7 +3124,7 @@ ul.feature-icons li:nth-child(2) {
 
 #wrapper>section>header h1:before,
 #wrapper>section>header h2:before {
-	background: #fff;
+	background: #00ffff;
 	content: '';
 	display: block;
 	height: 2px;
@@ -3133,7 +3134,7 @@ ul.feature-icons li:nth-child(2) {
 
 #wrapper>section>header h1:after,
 #wrapper>section>header h2:after {
-	background: #fff;
+	background: #00fff2;
 	border-radius: 0.5rem;
 	content: '';
 	display: block;
@@ -3191,7 +3192,7 @@ ul.feature-icons li:nth-child(2) {
 }
 
 #wrapper>section:last-of-type>header:after {
-	background: #ffffff;
+	background: #00f7ff;
 	border-radius: 0.5rem;
 	bottom: -1.5rem;
 	content: '';
@@ -3256,7 +3257,7 @@ ul.feature-icons li:nth-child(2) {
 }
 
 #wrapper>section.intro>header>* {
-	width: 38rem;
+	width: 35rem;
 }
 
 #wrapper>section.intro>header:before {
@@ -3791,7 +3792,7 @@ body.is-ie #wrapper>section>.content>section {
 
 .charts .chart h2 {
 	left: 38%;
-	top: 62%;
+	top: 69%;
 	transform: translate(-50%, -50%);
 	position: absolute;
 }
@@ -3815,4 +3816,304 @@ body.is-ie #wrapper>section>.content>section {
 .buttons {
 	z-index: 999;
 	display: flex;
+}
+
+
+/* gallery */
+@-moz-keyframes gallery-modal-spinner {
+	0% {
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-moz-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes gallery-modal-spinner {
+	0% {
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-moz-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-ms-keyframes gallery-modal-spinner {
+	0% {
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-moz-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes gallery-modal-spinner {
+	0% {
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-moz-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -1.25rem 0 0 -1.25rem;
+	width: calc(100% + 1.25rem);
+}
+
+.gallery a {
+	border-bottom: 0;
+	display: block;
+	margin: 1.25rem 0 0 1.25rem;
+	outline: 0;
+	position: relative;
+	width: calc(50% - 1.25rem);
+}
+
+.gallery a img {
+	display: block;
+	height: 25vw;
+	min-height: 18rem;
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+}
+
+.gallery a.landscape {
+	width: 100%;
+}
+
+.gallery a.landscape img {
+	height: 30vw;
+	position: relative;
+	top: 50%;
+}
+
+.gallery a.portrait img {
+	height: 30vw;
+}
+
+.gallery .modal {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	pointer-events: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-moz-transition: opacity 0.5s ease, visibility 0.5s, z-index 0.5s;
+	-webkit-transition: opacity 0.5s ease, visibility 0.5s, z-index 0.5s;
+	-ms-transition: opacity 0.5s ease, visibility 0.5s, z-index 0.5s;
+	transition: opacity 0.5s ease, visibility 0.5s, z-index 0.5s;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	background-color: rgba(255, 255, 255, 0.875);
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	outline: 0;
+	position: fixed;
+	top: 0;
+	visibility: none;
+	width: 100%;
+	z-index: 0;
+}
+
+.gallery .modal:before {
+	-moz-animation: gallery-modal-spinner 1s infinite linear;
+	-webkit-animation: gallery-modal-spinner 1s infinite linear;
+	-ms-animation: gallery-modal-spinner 1s infinite linear;
+	animation: gallery-modal-spinner 1s infinite linear;
+	-moz-transition: opacity 0.25s ease;
+	-webkit-transition: opacity 0.25s ease;
+	-ms-transition: opacity 0.25s ease;
+	transition: opacity 0.25s ease;
+	-moz-transition-delay: 0.5s;
+	-webkit-transition-delay: 0.5s;
+	-ms-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='96px' height='96px' viewBox='0 0 96 96' zoomAndPan='disable'%3E%3Cstyle%3Ecircle %7Bfill: transparent%3B stroke: %23000000%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cdefs%3E%3CclipPath id='corner'%3E%3Cpolygon points='0,0 48,0 48,48 96,48 96,96 0,96' /%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23corner)'%3E%3Ccircle cx='48' cy='48' r='32'/%3E%3C/g%3E%3C/svg%3E");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 4rem;
+	content: '';
+	display: block;
+	height: 4rem;
+	left: 50%;
+	margin: -2rem 0 0 -2rem;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	width: 4rem;
+}
+
+.gallery .modal:after {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='64px' height='64px' viewBox='0 0 64 64' zoomAndPan='disable'%3E%3Cstyle%3Eline %7Bstroke: %23000000%3Bstroke-width: 2px%3B%7D%3C/style%3E%3Cline x1='20' y1='20' x2='44' y2='44' /%3E%3Cline x1='20' y1='44' x2='44' y2='20' /%3E%3C/svg%3E");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 3rem;
+	content: '';
+	cursor: pointer;
+	display: block;
+	height: 4rem;
+	position: absolute;
+	right: 0.5rem;
+	top: 0.5rem;
+	width: 4rem;
+}
+
+.gallery .modal .inner {
+	-moz-transform: translateY(0.75rem);
+	-webkit-transform: translateY(0.75rem);
+	-ms-transform: translateY(0.75rem);
+	transform: translateY(0.75rem);
+	-moz-transition: opacity 0.25s ease, -moz-transform 0.25s ease;
+	-webkit-transition: opacity 0.25s ease, -webkit-transform 0.25s ease;
+	-ms-transition: opacity 0.25s ease, -ms-transform 0.25s ease;
+	transition: opacity 0.25s ease, transform 0.25s ease;
+	opacity: 0;
+}
+
+.gallery .modal .inner img {
+	box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.35);
+	display: block;
+	max-height: 90vh;
+	max-width: 90vw;
+}
+
+.gallery .modal.visible {
+	pointer-events: auto;
+	opacity: 1;
+	visibility: visible;
+	z-index: 11000;
+}
+
+.gallery .modal.visible:before {
+	opacity: 1;
+}
+
+.gallery .modal.loaded .inner {
+	-moz-transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+	-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease;
+	-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+	-ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease;
+	transition: opacity 0.5s ease, transform 0.5s ease;
+	opacity: 1;
+}
+
+.gallery .modal.loaded:before {
+	-moz-transition-delay: 0s;
+	-webkit-transition-delay: 0s;
+	-ms-transition-delay: 0s;
+	transition-delay: 0s;
+	opacity: 0;
+}
+
+@media screen and (max-width: 1152px) {
+
+	.gallery a img {
+		height: 20rem;
+	}
+
+	.gallery a.landscape img {
+		height: 25rem;
+	}
+
+	.gallery a.portrait img {
+		height: 25rem;
+	}
+
+	.gallery .modal .inner img {
+		max-width: 100vw;
+	}
+
+}
+
+@media screen and (max-width: 736px) {
+
+	.gallery {
+		margin: -0.625rem 0 0 -0.625rem;
+		width: calc(100% + 0.625rem);
+	}
+
+	.gallery a {
+		margin: 0.625rem 0 0 0.625rem;
+		width: calc(50% - 0.625rem);
+	}
+
+	.gallery a img {
+		height: 20rem;
+	}
+
+	.gallery a.landscape img {
+		height: 20rem;
+	}
+
+	.gallery a.portrait img {
+		height: 30rem;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	.gallery a img {
+		height: 12rem;
+		min-height: 0;
+	}
+
+	.gallery a.landscape img {
+		height: 12rem;
+	}
+
+	.gallery a.portrait img {
+		height: 14rem;
+	}
+
+}
+.gallery_name{
+	position: relative;
+	top: 50%;
 }
