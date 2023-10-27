@@ -4092,12 +4092,13 @@ body {
 .counter {
 	display: table-cell;
 	margin: 1.5%;
-	font-size: 50px;
-	background-color: #bdbdbd;
-	width: 200px;
+	font-size: 30px;
+	background-color: #adadad;
+	width: 90px;
 	border-radius: 50%;
-	height: 200px;
+	height: 80px;
 	vertical-align: middle;
+	font-family: 'Noto Sans Kr';
 }
 
 .mobile {
