@@ -1,11 +1,3 @@
-///
-/// Paradigm Shift by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
-
-/* Gallery */
-
 	@include keyframes('gallery-modal-spinner') {
 		0% {
 			@include vendor('transform', 'rotate(0deg)');
@@ -62,11 +54,10 @@
 			@include vendor('justify-content', 'center');
 			@include vendor('pointer-events', 'none');
 			@include vendor('user-select', 'none');
-			@include vendor('transition', (
-				'opacity #{_duration(gallery-lightbox-fadein)} ease',
-				'visibility #{_duration(gallery-lightbox-fadein)}',
-				'z-index #{_duration(gallery-lightbox-fadein)}'
-			));
+			@include vendor('transition', ('opacity #{_duration(gallery-lightbox-fadein)} ease',
+					'visibility #{_duration(gallery-lightbox-fadein)}',
+					'z-index #{_duration(gallery-lightbox-fadein)}'
+				));
 			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 			background-color: transparentize(_palette(bg), 1 - _misc(gallery-lightbox-opacity));
 			height: 100%;
@@ -115,10 +106,9 @@
 
 			.inner {
 				@include vendor('transform', 'translateY(0.75rem)');
-				@include vendor('transition', (
-					'opacity #{_duration(gallery-lightbox-fadein) * 0.5} ease',
-					'transform #{_duration(gallery-lightbox-fadein) * 0.5} ease'
-				));
+				@include vendor('transition', ('opacity #{_duration(gallery-lightbox-fadein) * 0.5} ease',
+						'transform #{_duration(gallery-lightbox-fadein) * 0.5} ease'
+					));
 				opacity: 0;
 
 				img {
@@ -143,10 +133,9 @@
 			&.loaded {
 				.inner {
 					@include vendor('transform', 'translateY(0)');
-					@include vendor('transition', (
-						'opacity #{_duration(gallery-lightbox-fadein)} ease',
-						'transform #{_duration(gallery-lightbox-fadein)} ease'
-					));
+					@include vendor('transition', ('opacity #{_duration(gallery-lightbox-fadein)} ease',
+							'transform #{_duration(gallery-lightbox-fadein)} ease'
+						));
 					opacity: 1;
 				}
 
