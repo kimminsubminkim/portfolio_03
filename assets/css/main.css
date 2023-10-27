@@ -4099,3 +4099,18 @@ body {
 	height: 200px;
 	vertical-align: middle;
 }
+
+.mobile {
+	position: relative;
+	top: 30%;
+}
+
+.project_2 {
+	position: relative;
+	top: 30%;
+	list-style: none;
+}
+
+.gallery {
+	display: flex;
+}
