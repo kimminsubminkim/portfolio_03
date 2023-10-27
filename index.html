@@ -15,6 +15,8 @@
 	<script src="assets/js/main.js"></script>
 	<script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
 	<link rel="shortcut icon" href="./images/lighthouse.png" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+	<link rel="stylesheet" href="./animation/animation.css">
 </head>
 
 <body>
@@ -25,15 +27,11 @@
 				<p><a href="https://github.com/kimminsubminkim"><img src="./images/github_icon.png" width="15"
 							height="15" alt="github"> GITHUB</a>/
 					<a href="#">이력서보기</a>
-				<ul class="actions">
-					<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
-				</ul>
+				<div id="lottie"></div>
 			</header>
 			<div class="content">
 			</div>
 		</section>
-
-
 		<section id="first">
 			<header>
 				<h2>About me</h2>
@@ -61,9 +59,6 @@
 				</section>
 			</div>
 		</section>
-
-
-
 		<section>
 			<header>
 				<h2>Career</h2>
@@ -81,7 +76,6 @@
 				</ul>
 			</div>
 		</section>
-
 		<section>
 			<header>
 				<h2>Project</h2>
@@ -124,18 +118,47 @@
 				</section>
 				<section>
 					<header>
+						<ul class="project_1">
+							<li><strong>티켓집사</strong></li>
+							<li>구현기술:PIGMA</li>
+							<li>작업기간:8주</li>
+							<li>본인기여도:30%(3명)</li>
+							<li>브라우저 호환성:앱</li>
+							<li>특징:팀프로젝트로 진행한 프로젝트입니다. 앱의 프로토타입까지 완성했습니다.</li>
+							<li class="buttons">
+								<div class="button">
+									<p><a href="https://github.com/kimminsubminkim/project2">피그마 시안보기</a></p>
+								</div>
+							</li>
+						</ul>
+					</header>
+					<div class="content">
+						<section class="section4">
+							<div class="container">
+									<div class="mockup mobile">
+										<div class="mask"><img src="#" alt="roffjf"
+												class="screen" />
+										</div>
+										<img src="./images/mobile.png" alt="dd" class="device"/>
+									</div>
+							</div>
+						</section>
+					</div>
+				</section>
+				<section>
+					<header>
 						<div class="gallery_name">
 							<h3>Gallery</h3>
 						</div>
 					</header>
 					<div class="content">
 						<div class="gallery">
-							
+
 						</div>
 					</div>
 				</section>
-
 			</div>
+			
 		</section>
 		<!-- Section -->
 		<section>
@@ -213,6 +236,15 @@
 
 
 		});
+	</script>
+	<script>
+		var animation = bodymovin.loadAnimation({
+			container: document.getElementById('lottie'), // Required
+			path: './animation/bingle.json', // Required
+			renderer: 'svg', // Required
+			loop: true, // Optional
+			autoplay: true, // Optional
+		})
 	</script>
 </body>
 
