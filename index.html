@@ -52,27 +52,9 @@
 					<div class="content">
 						<section class="section">
 							<div class="charts">
-								<div class="chart">
-									<h2 data-num="90"></h2>
-									<h3>HTML</h3>
-									<svg>
-										<circle cx="80" cy="80" r="70"></circle>
-									</svg>
-								</div>
-								<div class="chart">
-									<h2 data-num="80"></h2>
-									<h3>CSS</h3>
-									<svg>
-										<circle cx="80" cy="80" r="70"></circle>
-									</svg>
-								</div>
-								<div class="chart">
-									<h2 data-num="75"></h2>
-									<h3>JAVASCRIPT</h3>
-									<svg>
-										<circle cx="80" cy="80" r="70"></circle>
-									</svg>
-								</div>
+								<div class="counter" data-count="85">0</div>
+								<div class="counter" data-count="75">0</div>
+								<div class="counter" data-count="65">0</div>
 							</div>
 						</section>
 					</div>
@@ -148,8 +130,7 @@
 					</header>
 					<div class="content">
 						<div class="gallery">
-							<a href="images/gallery/fulls/10.jpg" class="landscape"><img
-									src="images/gallery/thumbs/10.jpg" alt="" /></a>
+							
 						</div>
 					</div>
 				</section>
@@ -162,6 +143,22 @@
 				<h2>Get in touch</h2>
 			</header>
 			<div class="content">
+				<form>
+					<div class="fields">
+						<div class="field half">
+							<input type="text" name="name" id="name" placeholder="Name" />
+						</div>
+						<div class="field half">
+							<input type="email" name="email" id="email" placeholder="Email" />
+						</div>
+						<div class="field">
+							<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+						</div>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="Send Message" class="button primary" /></li>
+					</ul>
+				</form>
 			</div>
 			<footer>
 				<ul class="items">
@@ -190,6 +187,33 @@
 			</footer>
 		</section>
 	</div>
+	<script>
+		$('.counter').each(function () {
+			var $this = $(this),
+				countTo = $this.attr('data-count');
+
+			$({ countNum: $this.text() }).animate({
+				countNum: countTo
+			},
+
+				{
+
+					duration: 8000,
+					easing: 'linear',
+					step: function () {
+						$this.text(Math.floor(this.countNum));
+					},
+					complete: function () {
+						$this.text(this.countNum);
+						//alert('finished');
+					}
+
+				});
+
+
+
+		});
+	</script>
 </body>
 
 </html>
