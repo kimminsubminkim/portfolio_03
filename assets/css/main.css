@@ -4087,6 +4087,7 @@ body {
 
 .charts {
 	text-align: center;
+	padding-left: 10vw;
 }
 
 .charts ul {
@@ -4175,4 +4176,8 @@ h3 {
 	.gallery-item {
 		margin: 0;
 	}
+}
+
+.co {
+	text-align: center;
 }
