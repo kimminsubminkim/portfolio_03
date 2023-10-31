@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 
 <head>
 	<meta charset="utf-8">
@@ -14,10 +14,9 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
-	<link rel="shortcut icon" href="./images/lighthouse.png">
+	<link rel="shortcut icon" href="./images/lighthouse.png" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
 	<link rel="stylesheet" href="./animation/animation.css">
-	<link rel="stylesheet" href="sub.html">
 </head>
 
 <body>
@@ -37,7 +36,7 @@
 			<header>
 				<h2>About me</h2>
 			</header>
-			<div class="content am">
+			<div class="content">
 				<h3>About me</h3>
 				<p>Name: <strong>김민섭</strong></p>
 				<p>Age: <strong>21살</strong></p>
@@ -49,13 +48,18 @@
 						<h3>skills</h3>
 					</header>
 					<div class="content">
-						<div class="section">
-							<div class="charts ch">
+						<section class="section">
+							<div class="charts">
+								<ul>
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>JS</li>
+								</ul>
 								<div class="counter" data-count="85%">0%</div>
 								<div class="counter" data-count="75%">0%</div>
 								<div class="counter" data-count="65%">0%</div>
 							</div>
-						</div>
+						</section>
 					</div>
 				</section>
 			</div>
@@ -66,20 +70,14 @@
 			</header>
 			<div class="content">
 				<h3>Career</h3>
-				<ul class="feature-icons1 fe">
+				<ul class="feature-icons1">
 					<li><strong>EDUCATION</strong></li>
 					<li>2021~ 호서대 물리치료학과 재학</li>
 				</ul>
-				<ul class="feature-icons2 fe">
+				<ul class="feature-icons2">
 					<li><strong>LICENSE</strong></li>
 					<li>2020.HSK 6급</li>
 					<li>2022.운전면허 1종 보통</li>
-				</ul>
-				<ul class="feature-icons3 fe">
-					<li><strong>AWARDS</strong></li>
-					<li></li>
-					<li></li>
-					<li></li>
 				</ul>
 			</div>
 		</section>
@@ -89,7 +87,7 @@
 			</header>
 			<div class="content">
 				<h3>My Project</h3>
-				<div>
+				<section>
 					<header>
 						<ul class="project_1">
 							<li><strong>NIKE</strong></li>
@@ -109,21 +107,21 @@
 						</ul>
 					</header>
 					<div class="content">
-						<div class="section4">
+						<section class="section4">
 							<div class="container">
 								<div class="item left pa">
 									<div class="mockup pc">
 										<div class="mask"><img src="./images/gallery/nike.png" width="45" alt="roffjf"
-												class="screen">
+												class="screen" />
 										</div>
-										<img src="./images/desktop.png" width="50" alt="dd" class="device">
+										<img src="./images/desktop.png" width="50" alt="dd" class="device" />
 									</div>
 								</div>
 							</div>
-						</div>
+						</section>
 					</div>
-				</div>
-				<div>
+				</section>
+				<section>
 					<header>
 						<ul class="project_2">
 							<li><strong>티켓집사</strong></li>
@@ -135,25 +133,24 @@
 							<li class="buttons">
 								<div class="button">
 									<p>
-										<a
-											href="https://www.figma.com/file/3OSRaDiCDCQbHEjhdn5JP6/%EB%B6%88%EC%82%AC%EC%A1%B0%ED%94%84%EC%A0%9D?type=design&node-id=70%3A2&mode=design&t=cWU2HR4MZAh4qMwF-1">피그마보기</a>
+										<a href="https://www.figma.com/file/3OSRaDiCDCQbHEjhdn5JP6/%EB%B6%88%EC%82%AC%EC%A1%B0%ED%94%84%EC%A0%9D?type=design&node-id=70%3A2&mode=design&t=cWU2HR4MZAh4qMwF-1">피그마보기</a>
 									</p>
 								</div>
 							</li>
 						</ul>
 					</header>
 					<div class="content">
-						<div class="section4">
+						<section class="section4">
 							<div class="container">
 								<div class="mockup mobile">
-									<div class="mask"><img src="#" alt="스마트폰 화면" class="screen">
+									<div class="mask"><img src="#" alt="스마트폰 화면" class="screen" />
 									</div>
-									<img src="./images/mobile.png" alt="dd" class="device">
+									<img src="./images/mobile.png" alt="dd" class="device" />
 								</div>
 							</div>
-						</div>
+						</section>
 					</div>
-				</div>
+				</section>
 				<section>
 					<header>
 						<div class="gallery_name">
@@ -161,21 +158,10 @@
 						</div>
 					</header>
 					<div class="content">
-						<h3>Gallery</h3>
+						<h4>Gallery</h4>
 						<div class="gallery">
-							<div class="row">
-								<ul>
-									<li><img src="http://qwerew.cafe24.com/images/1.jpg" data-src="gallery/1.html"
-											class="pic" alt="이"></li>
-									<li><img src="http://qwerew.cafe24.com/images/2.jpg" data-src="gallery/2.html"
-											class="pic" alt="미"></li>
-									<li><img src="http://qwerew.cafe24.com/images/3.jpg" data-src="gallery/3.html"
-											class="pic" alt="지"></li>
-								</ul>
-							</div>
-							<div id="lightbox">
-								<div id="lightboxImage"></div>
-							</div>
+							<img src="./images/앞면.png" alt="그림">
+							<img src="./images/뒷면.png" alt="그림">
 						</div>
 					</div>
 				</section>
@@ -191,17 +177,17 @@
 				<form>
 					<div class="fields">
 						<div class="field half">
-							<input type="text" name="name" id="name" placeholder="Name">
+							<input type="text" name="name" id="name" placeholder="Name" />
 						</div>
 						<div class="field half">
-							<input type="email" name="email" id="email" placeholder="Email">
+							<input type="email" name="email" id="email" placeholder="Email" />
 						</div>
 						<div class="field">
 							<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
 						</div>
 					</div>
 					<ul class="actions">
-						<li><input type="submit" value="Send Message" class="button primary"></li>
+						<li><input type="submit" value="Send Message" class="button primary" /></li>
 					</ul>
 				</form>
 			</div>
@@ -217,6 +203,9 @@
 					</li>
 					<li>
 						<ul class="icons">
+							<li>
+								<a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a>
+							</li>
 							<li>
 								<a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
 							</li>
@@ -261,23 +250,6 @@
 			renderer: 'svg',
 			loop: true,
 			autoplay: true,
-		})
-	</script>
-	<script>
-		const pics = $(".pic");
-		const lightbox = $("#lightbox");
-		const lightboxImage = $("#lightboxImage");
-
-		pics.on('click', function () {
-			const bigLocation = $(this).attr("data-src");
-			lightboxImage.load(bigLocation);
-			$('html').addClass('all_scrollFixed');
-			lightbox.css('display', 'block');
-		})
-
-		lightbox.on('click', function () {
-			lightbox.css('display', 'none');
-			$('html').removeClass('all_scrollFixed');
 		})
 	</script>
 </body>
