@@ -4128,36 +4128,10 @@ h3 {
 }
 
 /* 이미지 */
-:root {
-	/* Base font size */
-	font-size: 10px;
-}
-
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
-
-body {
-	min-height: 100vh;
-	background-color: #fafafa;
-}
-
 .container4 {
 	max-width: 100rem;
 	margin: 0 auto;
 	padding: 0 2rem 2rem;
-}
-
-.heading {
-	font-family: "Montserrat", Arial, sans-serif;
-	font-size: 4rem;
-	font-weight: 500;
-	line-height: 1.5;
-	text-align: center;
-	padding: 3.5rem 0;
-	color: #1a1a1a;
 }
 
 .heading span {
@@ -4172,9 +4146,7 @@ body {
 }
 
 .gallery-item {
-	/* Minimum width of 24rem and grow to fit available space */
 	flex: 1 0 24rem;
-	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
 	margin: 1rem;
 	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 	overflow: hidden;
@@ -4191,14 +4163,6 @@ body {
 .gallery-image:hover {
 	transform: scale(1.15);
 }
-
-/*
-
-The following rule will only run if your browser supports CSS grid.
-
-Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
-
-*/
 
 @supports (display: grid) {
 	.gallery {
