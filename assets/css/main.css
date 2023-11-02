@@ -4071,6 +4071,10 @@ body.is-ie #wrapper>section>.content>section {
 		height: 14rem;
 	}
 
+	.figma {
+		overflow: hidden;
+	}
+
 }
 
 .gallery_name {
@@ -4210,4 +4214,6 @@ iframe {
 	width: 296px;
 	height: 685px;
 	top: 5px;
+	left: 5px;
+
 }
